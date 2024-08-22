@@ -1,0 +1,111 @@
+.detail-container {
+    display:flex;
+    height: 100%;
+
+}
+
+.image-country {
+    flex:1;
+}
+
+.country-information {
+    flex:1;
+}
+
+.body {
+    display: flex;
+}
+.left {
+    flex:1;
+}
+
+
+.right {
+    flex:1;
+}
+.image-country{
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.item {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    min-width: 60px;
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.border-countries {
+    display: flex;
+}
+
+.image-country img {
+    width: 561px;
+    height:402px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.back-container {
+    width: 10%;
+    padding: 15px 10px 10px 15px;/* Thêm khoảng trống bên trái cho icon */
+    box-sizing: border-box;
+    border: 0 solid;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-size: 16px;
+    height:40px;
+    margin-bottom: 40px;
+    margin: 35px 0 35px 90px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+
+
+body.dark-mode {
+    background-color: #fff;
+    color:#000;
+}
+
+body.dark-mode .header-container {
+    background-color: #fff;
+}
+
+body.dark-mode .found input {
+    background-color: #fff;
+}
+
+body.dark-mode .filter select {
+    background-color: #fff;
+    color:#000;
+}
+
+body {
+    background-color: hsl(207, 26%, 17%);
+    color:#fff;
+}
+
+body .header-container {
+    background-color: hsl(209, 23%, 22%);
+}
+
+body .found input {
+    background-color: hsl(209, 23%, 22%) ;
+}
+
+body .filter select {
+    background-color: hsl(209, 23%, 22%) ;
+    color:#fff;
+}
+

@@ -1,0 +1,36 @@
+body.dark-mode {
+    background-color: #fff;
+    color:#000;
+}
+
+body.dark-mode .header-container {
+    background-color: #fff;
+}
+
+body.dark-mode .found input {
+    background-color: #fff;
+}
+
+body.dark-mode .filter select {
+    background-color: #fff;
+    color:#000;
+}
+
+body {
+    background-color: hsl(207, 26%, 17%);
+    color:#fff;
+}
+
+body .header-container {
+    background-color: hsl(209, 23%, 22%);
+}
+
+body .found input {
+    background-color: hsl(209, 23%, 22%) ;
+}
+
+body .filter select {
+    background-color: hsl(209, 23%, 22%) ;
+    color:#fff;
+}
+

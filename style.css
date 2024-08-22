@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: Nunito;
+}
+
+main {
+    padding:24px;
+}
+
+a {
+    text-decoration-line: none;
+    color:inherit;
+}
+.title {
+    font-weight: 800;
+}
+
+.header-container {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto; /*Tự động căn từ ngoài vào trong giữa khung hình */
+    padding-inline:24px;   
+}
+
+.countries-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top:60px;
+    display:flex;
+    gap:64px;
+    flex-wrap: wrap;
+}
+
+.country-card {
+    display:inline-block;
+    width:250px;
+    border-radius: 8px;
+    overflow: hidden; 
+    padding-bottom: 18px;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out; 
+}
+
+.country-card:hover {
+    transform: scale(1.05); /* phong to vat the len 1.05 lan */
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-block:16px;
+
+}
+
+.card-text{
+    padding-inline: 16px;
+}
+
+.card-text p {
+    margin-block: 8px;
+}
+
+.found {
+    position: relative;
+    width: 300px; /* Đặt chiều rộng tùy theo nhu cầu */
+    
+}
+
+.found input {
+    width: 130%;
+    padding: 15px 0 10px 40px;/* Thêm khoảng trống bên trái cho icon */
+    box-sizing: border-box;
+    border: 0 solid;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-size: 13px;
+    height:50px;
+}
+
+.found label {
+    position: absolute;
+    left: 10px; /* Điều chỉnh vị trí của icon */
+    top: 55%;
+    transform: translateY(-50%);
+    color: #888; /* Màu sắc của icon */
+}
+
+.found i {
+    pointer-events: none; /* Đảm bảo rằng icon không ảnh hưởng đến sự tương tác với input */
+}
+
+.country-card img {
+    width:100%;
+    height: 160px;
+    object-fit: cover; /*Cho hình ảnh bên trong vừa với khung*/
+}
+
+.nav {
+    padding-left: 136px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 185px;
+}
+
+.filter select {
+    width: 130%;
+    padding: 15px 10px 10px 15px;/* Thêm khoảng trống bên trái cho icon */
+    box-sizing: border-box;
+    border: 0 solid;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-size: 13px;
+    height:50px;
+}
+
+@media(max-width:500px) {
+    .countries-container{
+        justify-content: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        margin-left:-20px;
+        padding: 0 0 0 30px;
+    }
+
+    .found input {
+        width: 100%;
+    }
+
+    .filter select {
+        margin-top: 50px;
+        width: 45%;
+    }
+}
